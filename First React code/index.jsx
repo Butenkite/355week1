@@ -1,11 +1,9 @@
 import { createRoot } from "react-dom/client";
+import { createElement } from "react";
 
 const root = createRoot(document.getElementById("root"));
+const reactElement = createElement("h1", null, "Create Element");
 
-root.render(
-  <ul>
-    <li>a</li>
-    <li>b</li>
-    <li>c</li>
-  </ul>
-);
+console.log(reactElement);
+
+root.render(reactElement);
